@@ -98,8 +98,9 @@ textarea {
 
 html {
     font-size: 16px;
-  background-color: #353E3C;
+  background-color: #2A5072;
   height: 100%;
+  width: 100%;
 }
 
 body {
@@ -107,6 +108,48 @@ body {
   padding: 2em;
   font-size: 1.25em;
   height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+  }
+
+header, footer{
+    color: #fff;
+    text-align: center;
+    width: 100%;
+    /*background-color: #537B94;*/
+    display: flex;
+    justify-content: flex-start;
+}
+
+header h1 {
+    font-family: 'Lora', sans-serif;
+    font-size: 3em;
+}
+
+header {
+    border-bottom: 1px solid #fff;
+  }
+
+main {
+    /*background-color: #46718C;*/
+    height: 150px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+
+main h2 {
+    font-family: 'Lora', sans-serif;
+    font-size: 2em;
 }
 
 .wrapper {
@@ -116,7 +159,7 @@ body {
   font-weight: 700;
 }
 
-.div-1, .div-2, .div-3 {
+.flex-item{
   /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
   display: flex;
   justify-content: center;
@@ -125,13 +168,20 @@ body {
   line-height: 1.5em;
   font-size: 1em;
   width: 30%;
-  background-color:#3B716B;
+  /*background-color:#2A5072;*/
   height: 300px;
 }
 
 p{
-   margin-left: 0.25rem; 
+   margin-left: 0.25rem;
+   line-height: 1.5em;
+    font-size: 1em;
 }
+
+
+footer {
+    border-top: 1px solid #fff;
+  }
 
 
 
